@@ -261,9 +261,9 @@ newNumsArr.forEach((arr) => {
     if (arr.includes(66)) {        
         arr.forEach((number) => {
             if (number === 66) {
-                num = 66;
+                num += 66;
     }
-return num
+return num;
 });
 
 
@@ -286,7 +286,12 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
+let total = 0;
 
-
-
-//console.log('Exercise 15 result:\n', total);
+numArrays.forEach((arr) => {
+    arr.forEach((num) => {        
+        total += num;
+    })
+    return total;
+});
+console.log('Exercise 15 result:\n', total);
