@@ -20,7 +20,7 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-foods.push('pizza', 'cheeseburger',)
+foods.push('pizza', 'cheeseburger',);
 
 console.log('Exercise 2 result:', foods);
 
@@ -32,7 +32,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-foods.unshift('tacos')
+foods.unshift('tacos');
 
 console.log('Exercise 3 result:', foods);
 
@@ -47,7 +47,13 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-const favFood = foods[1]
+let favFood = '';
+for (let i = 0; i < foods.length; i++) {        
+        if (foods[i] === 'pizza') {
+            favFood += foods[i];
+        }
+}
+
 
 console.log('Exercise 4 result:', favFood);
 
@@ -234,7 +240,9 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
-const numList = numArrays.pop();
+const numArrays2 = numArrays.slice(0)
+const numList = numArrays2.pop()
+
 
 console.log('Exercise 13 result:', numList);
 
@@ -248,8 +256,11 @@ Exercise 14: Accessing within nested arrays
 
 I had trouble with this challenge. I was unsure how to approach it and even though I 
 managed to get the right answer I am would like to go over this if we can. 
-I used the fact that I can mutate the data type of a let variable to get my anwer but i feel like thats not a good idea
+I used the fact that I can mutate the data type of a let variable to get my answer 
+but i feel like thats not a good idea
 
+I tried to refactor my answer so that it was a bit cleaner. 
+Still unsure if I coded it the right way but I get th intended answer
 Complete Exercise 14 in the space below:
 */
 
@@ -262,13 +273,10 @@ newNumsArr.forEach((arr) => {
         arr.forEach((number) => {
             if (number === 66) {
                 num += 66;
-    }
-return num;
-});
-
-
-};
-
+            }
+        return num;
+        });
+    };
 });
 
 
