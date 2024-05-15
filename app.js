@@ -32,7 +32,7 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-foods.unshift('tacos');
+foods.unshift('taco');
 
 console.log('Exercise 3 result:', foods);
 
@@ -93,8 +93,8 @@ Exercise 7: Using the `slice()` method
 Complete Exercise 7 in the space below:
 */
 
-const yummy = foods.slice(1, 2,);
-yummy.push('cupcake');
+const yummy = foods.slice(1, 3,);
+
 console.log('Exercise 7 result:', yummy);
 
 
@@ -273,8 +273,7 @@ newNumsArr.forEach((arr) => {
         arr.forEach((number) => {
             if (number === 66) {
                 num += 66;
-            }
-        return num;
+            }        
         });
     };
 });
@@ -299,7 +298,6 @@ let total = 0;
 numArrays.forEach((arr) => {
     arr.forEach((num) => {        
         total += num;
-    })
-    return total;
+    })    
 });
 console.log('Exercise 15 result:\n', total);
